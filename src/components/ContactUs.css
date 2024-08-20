@@ -1,0 +1,17 @@
+/* src/components/ContactUs.css */
+.contact-us-container {
+    padding: 20px;
+  }
+  
+  .contact-us-container h2 {
+    font-size: 24px;
+  }
+  
+  .contact-us-container form {
+    margin-top: 20px;
+  }
+  
+  .contact-us-container input, .contact-us-container textarea, .contact-us-container button {
+    margin: 5px 0;
+  }
+  

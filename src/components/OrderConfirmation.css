@@ -1,0 +1,44 @@
+/* src/components/OrderConfirmation.css */
+.order-confirmation {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .order-confirmation h2 {
+    margin-bottom: 10px;
+  }
+  
+  .order-confirmation ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .order-confirmation li {
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  
+  .order-confirmation li:hover {
+    background-color: #f8f9fa;
+  }
+  
+  .order-confirmation h3 {
+    margin-top: 20px;
+  }
+  
+  .order-confirmation button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #17a2b8;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .order-confirmation button:hover {
+    background-color: #138496;
+  }
+  

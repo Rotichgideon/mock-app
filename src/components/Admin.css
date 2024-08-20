@@ -1,0 +1,17 @@
+/* src/components/Admin.css */
+.admin-container {
+    padding: 20px;
+  }
+  
+  .admin-container h2 {
+    font-size: 24px;
+  }
+  
+  .admin-container form {
+    margin-top: 20px;
+  }
+  
+  .admin-container input, .admin-container button {
+    margin: 5px 0;
+  }
+  

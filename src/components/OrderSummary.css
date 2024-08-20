@@ -1,0 +1,22 @@
+/* src/components/OrderSummary.css */
+.order-summary {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .order-summary h2 {
+    margin-bottom: 10px;
+  }
+  
+  .order-summary div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .order-summary h3 {
+    margin-top: 20px;
+  }
+  

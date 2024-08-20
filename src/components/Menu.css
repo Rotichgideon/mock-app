@@ -1,0 +1,28 @@
+/* src/components/Menu.css */
+.menu-and-order {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.menu, .cart {
+  width: 45%;
+}
+
+.menu-item, .cart-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.quantity-control {
+  display: flex;
+  align-items: center;
+}
+
+.quantity-control button {
+  padding: 5px 10px;
+  margin: 0 5px;
+}

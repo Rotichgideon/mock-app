@@ -1,44 +1,60 @@
-/* src/components/OrderConfirmation.css */
-.order-confirmation {
-    margin: 20px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  .order-confirmation h2 {
-    margin-bottom: 10px;
-  }
-  
-  .order-confirmation ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .order-confirmation li {
-    margin-bottom: 10px;
-    cursor: pointer;
-  }
-  
-  .order-confirmation li:hover {
-    background-color: #f8f9fa;
-  }
-  
-  .order-confirmation h3 {
-    margin-top: 20px;
-  }
-  
-  .order-confirmation button {
-    margin-top: 10px;
-    padding: 5px 10px;
-    background-color: #17a2b8;
-    color: white;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-  }
-  
-  .order-confirmation button:hover {
-    background-color: #138496;
-  }
-  
+.order-confirmation-container {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  max-width: 500px;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.order-confirmation-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+
+.order-list {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.order-item {
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+}
+
+.order-item:last-child {
+  border-bottom: none;
+}
+
+.order-price {
+  font-weight: bold;
+  color: #555;
+}
+
+.confirm-order-button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.confirm-order-button:hover {
+  background-color: #218838;
+}
+
+.error-message {
+  color: red;
+  font-weight: bold;
+  text-align: center;
+}

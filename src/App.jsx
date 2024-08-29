@@ -11,7 +11,7 @@ import ContactUs from './components/ContactUs';
 import Admin from './components/Admin';
 import Login from './components/Login';
 import Register from './components/Register';
-import { isAuthenticated, logout } from './services/api';
+import { logout } from './services/api';
 
 function App() {
   const [menu, setMenu] = useState([
@@ -26,12 +26,7 @@ function App() {
   const [cart, setCart] = useState([]);
   const [activePage, setActivePage] = useState('home');
 
-  const handleAddToCart = async (menuItem) => {
-    if (!isAuthenticated()) {
-      setActivePage('login');
-      return;
-    }
-
+  const handleAddToCart = (menuItem) => {
     const existingItem = cart.find((item) => item.id === menuItem.id);
     if (existingItem) {
       setCart(cart.map((item) =>

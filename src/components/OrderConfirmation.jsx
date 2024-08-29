@@ -1,10 +1,9 @@
-// src/components/OrderConfirmation.js
-
 import React from 'react';
+import './OrderConfirmation.css'; // Import the CSS file
 
 function OrderConfirmation({ orders, onConfirmOrder }) {
   if (!Array.isArray(orders)) {
-    return <div>Error: Orders is not an array</div>;
+    return <div className="error-message">Error: Orders is not an array</div>;
   }
 
   const confirmOrder = () => {
@@ -12,16 +11,18 @@ function OrderConfirmation({ orders, onConfirmOrder }) {
   };
 
   return (
-    <div>
-      <h2>Order Confirmation</h2>
-      <ul>
+    <div className="order-confirmation-container">
+      <h2 className="order-confirmation-title">Order Confirmation</h2>
+      <ul className="order-list">
         {orders.map((order, index) => (
-          <li key={index}>
-            {order.name} - ${order.price}
+          <li key={index} className="order-item">
+            {order.name} - <span className="order-price">${order.price}</span>
           </li>
         ))}
       </ul>
-      <button onClick={confirmOrder}>Confirm Order</button>
+      <button className="confirm-order-button" onClick={confirmOrder}>
+        Confirm Order
+      </button>
     </div>
   );
 }

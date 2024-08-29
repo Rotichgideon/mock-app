@@ -1,32 +1,33 @@
 import React, { useState } from 'react';
-import { login } from '../services/api';
 
-const Login = ({ setActivePage }) => {
+const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-  const handleLogin = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    try {
-      await login(email, password);
-      setActivePage('home');
-    } catch (error) {
-      alert('Login failed');
-    }
+    // Handle login logic here
+    console.log('Login:', { email, password });
   };
 
   return (
-    <div>
+    <div className="auth-container">
       <h2>Login</h2>
-      <form onSubmit={handleLogin}>
-        <div>
-          <label>Email:</label>
-          <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
-        </div>
-        <div>
-          <label>Password:</label>
-          <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
-        </div>
+      <form onSubmit={handleSubmit}>
+        <input
+          type="email"
+          placeholder="Email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          required
+        />
+        <input
+          type="password"
+          placeholder="Password"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+          required
+        />
         <button type="submit">Login</button>
       </form>
     </div>
